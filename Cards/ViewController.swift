@@ -43,7 +43,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    
         // credo un deck completo di carte francesi
         for s in 1...4 {
             for n in 1...13 {
