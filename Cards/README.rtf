@@ -1,0 +1,34 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1343\cocoasubrtf160
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red52\green52\blue52;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19980\viewh12420\viewkind0
+\deftab720
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\sa200
+
+\f0\b\fs32 \cf2 \expnd0\expndtw0\kerning0
+Sviluppo App iOS\
+Demo 1 - Cards\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720
+
+\b0\fs18 \cf0 \expnd0\expndtw0\kerning0
+\
+\pard\tx220\tx720\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardeftab720\li720\fi-720\sl288\slmult1\sa160
+\ls1\ilvl0
+\fs32 \cf0 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Creo model di card (sostanzialmente vuoto, pu\'f2 servire anche per carte napoletane)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	2	}Creo model di deck che lavora con Card astratte (_cards con lazy loads + drawRandomCard (leva dal mazzo con removeObject)) e metodo addCard:(Card*)\expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	3	}Poi FrenchCard \expnd0\expndtw0\kerning0
+(rank e suit con enums)\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	4	}in viewDidLoad crei e popoli il deck con carte francesi (notare polimorfismo)\expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	5	}creo 1 bottone (77x100) con sfondo e \'93sfondo\'94 da assetc, titolo vuoto (font 22)\expnd0\expndtw0\kerning0
+\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 {\listtext	6	}crei action su click che pesca dal mazzo e rigira carta, deck \'e8 property strong del controller\
+{\listtext	7	}su click cambi background e title dalla carta pescata\
+{\listtext	8	}\'97 PROVA (per avere centrati usa simul. iphone 5S)\
+{\listtext	9	}toggle copri la carta se gi\'e0 girata\
+{\listtext	10	}colore rosso o nero a seconda del suit (metodo suitType con Enum in FrenchCard)\
+{\listtext	11	}le carte diventano 3 (no cambio codice necessario)}
