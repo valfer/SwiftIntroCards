@@ -10,4 +10,10 @@ import Foundation
 
 class Card {
     
+    var name : String = ""
+    
+    func description() -> String {
+        
+        return name
+    }
 }

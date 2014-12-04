@@ -98,6 +98,7 @@ class FrenchCard : Card {
         self._rank = rank
         self._suit = suit
         super.init()
+        self.name = self.rank() + " " + self.suit()
     }
     
     //MARK: PUBLIC
@@ -111,5 +112,11 @@ class FrenchCard : Card {
     
     func rank() -> String {
         return _rank.descr()
+    }
+    
+    override func description() -> String {
+        
+        return super.description()
+        // return rank() + " " + suit()
     }
 }
