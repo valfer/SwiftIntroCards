@@ -10,7 +10,11 @@ import Foundation
 
 class Deck {
     
-    lazy private var _cards = [Card]()
+    private var _cards : [Card]
+    
+    init() {
+        self._cards = [Card]()
+    }
     
     func addCard(card : Card) {
         _cards.append(card)
