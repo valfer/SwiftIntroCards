@@ -114,9 +114,9 @@ class FrenchCard : Card {
         return _rank.descr()
     }
     
-    override func description() -> String {
+    override func descr() -> String {
         
-        return super.description()
+        return super.descr()
         // return rank() + " " + suit()
     }
 }

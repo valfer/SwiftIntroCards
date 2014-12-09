@@ -18,6 +18,7 @@ class Deck {
     
     func addCard(card : Card) {
         _cards.append(card)
+        println("aggiunta \(card)")
     }
     
     // nota bene torna un optional, le carte potrebbero essere finite

@@ -8,11 +8,18 @@
 
 import Foundation
 
-class Card {
+class Card : Printable {
+    
+    var description: String {
+        
+        get {
+            return self.descr()
+        }
+    }
     
     var name : String = ""
     
-    func description() -> String {
+    func descr() -> String {
         
         return name
     }
