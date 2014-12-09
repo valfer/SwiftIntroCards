@@ -34,13 +34,9 @@ class FrenchCard : Card {
         func color() -> String {
             switch self {
                 
-            case Cuori:
+            case Cuori, Quadri:
                 return "red"
-            case Quadri:
-                return "red"
-            case Fiori:
-                return "black"
-            case Picche:
+            case Fiori, Picche:
                 return "black"
             }
         }
@@ -90,6 +86,7 @@ class FrenchCard : Card {
         }
     }
     
+    // importanti undescores per differenziarli da metodi
     private let _rank : Rank
     private let _suit : Suit
     

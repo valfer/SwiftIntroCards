@@ -21,16 +21,16 @@ class ViewController: UIViewController {
             let aCard : FrenchCard? = deck.drawRandomCard() as FrenchCard?
             if let _aCard = aCard {
                 
-                sender.setTitle(_aCard.rank() + _aCard.suit(), forState: .Normal)
+                sender.setTitle(_aCard.name, forState: .Normal)
                 sender.setBackgroundImage(UIImage(named: "bianco"), forState: .Normal)
-                var bkgColor : UIColor
+                var textColor : UIColor
                 switch _aCard.color() {
                 case "red":
-                    bkgColor = UIColor.redColor()
+                    textColor = UIColor.redColor()
                 default:
-                    bkgColor = UIColor.blackColor()
+                    textColor = UIColor.blackColor()
                 }
-                sender.setTitleColor(bkgColor, forState: .Normal)
+                sender.setTitleColor(textColor, forState: .Normal)
             }
         } else {
             
