@@ -46,8 +46,9 @@ class ViewController: UIViewController {
         // credo un deck completo di carte francesi
         for s in 1...4 {
             for n in 1...13 {
+                let rank = FrenchCard.Rank(n)
                 let suit : FrenchCard.Suit? = FrenchCard.Suit(rawValue: s)
-                let card = FrenchCard(rank: FrenchCard.Rank(n), suit: suit ?? .Cuori)
+                let card = FrenchCard(rank: rank, suit: suit ?? .Cuori)
                 deck.addCard(card)
             }
         }
